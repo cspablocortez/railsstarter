@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tik tok posts</h1>
+
+<div id="tik_tok_posts">
+  <% @tik_tok_posts.each do |tik_tok_post| %>
+    <%= render tik_tok_post %>
+    <p>
+      <%= link_to "Show this tik tok post", tik_tok_post %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New tik tok post", new_tik_tok_post_path %>

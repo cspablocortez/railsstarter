@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @tik_tok_post %>
+
+<div>
+  <%= link_to "Edit this tik tok post", edit_tik_tok_post_path(@tik_tok_post) %> |
+  <%= link_to "Back to tik tok posts", tik_tok_posts_path %>
+
+  <%= button_to "Destroy this tik tok post", @tik_tok_post, method: :delete %>
+</div>
